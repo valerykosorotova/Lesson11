@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Graphik LCG";
-  src: url("fonts/subset-GraphikLCG-Regular.eot");
-  src: url("fonts/subset-GraphikLCG-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/subset-GraphikLCG-Regular.woff2") format("woff2"), url("fonts/subset-GraphikLCG-Regular.woff") format("woff"), url("fonts/subset-GraphikLCG-Regular.ttf") format("truetype"), url("fonts/subset-GraphikLCG-Regular.svg#GraphikLCG-Regular") format("svg");
+  src: url("./fonts/subset-GraphikLCG-Regular.eot");
+  src: url("./fonts/subset-GraphikLCG-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/subset-GraphikLCG-Regular.woff2") format("woff2"), url("./fonts/subset-GraphikLCG-Regular.woff") format("woff"), url("./fonts/subset-GraphikLCG-Regular.ttf") format("truetype"), url("./fonts/subset-GraphikLCG-Regular.svg#GraphikLCG-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Graphik LCG";
-  src: url("fonts/subset-GraphikLCG-Semibold.eot");
-  src: url("fonts/subset-GraphikLCG-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/subset-GraphikLCG-Semibold.woff2") format("woff2"), url("fonts/subset-GraphikLCG-Semibold.woff") format("woff"), url("fonts/subset-GraphikLCG-Semibold.ttf") format("truetype"), url("fonts/subset-GraphikLCG-Semibold.svg#GraphikLCG-Semibold") format("svg");
+  src: url("./fonts/subset-GraphikLCG-Semibold.eot");
+  src: url("./fonts/subset-GraphikLCG-Semibold.eot?#iefix") format("embedded-opentype"), url("./fonts/subset-GraphikLCG-Semibold.woff2") format("woff2"), url("./fonts/subset-GraphikLCG-Semibold.woff") format("woff"), url("./fonts/subset-GraphikLCG-Semibold.ttf") format("truetype"), url("./fonts/subset-GraphikLCG-Semibold.svg#GraphikLCG-Semibold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: Graphik LCG, sans-serif;
+  font-family: "Graphik LCG", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
@@ -32,15 +32,23 @@ body {
   margin-right: auto;
 }
 
-.navigation__list {
+.header__wrap {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 25px 0 25px 0;
 }
-.navigation__list_right {
+
+.header__buttons {
   margin-left: auto;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation__item {
@@ -52,21 +60,17 @@ body {
   text-decoration: none;
 }
 
-.navigation__logo-link {
-  display: inline-block;
-  font-size: 0;
-  line-height: 0;
-  text-decoration: none;
-}
-
 .colored-button, .transparent-button {
+  display: inline-block;
   padding: 0px 36px 0px 36px;
   border: 1px solid black;
   background-color: white;
-  font-family: Graphik LCG, sans-serif;
+  font-family: "Graphik LCG", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 45px;
+  color: black;
+  text-decoration: none;
 }
 
 .colored-button {
@@ -74,16 +78,7 @@ body {
   background-color: #FF6336;
   border: 1px solid #FF6336;
   margin-left: 10px;
-}
-
-.transparent-button__link {
-  color: black;
-  text-decoration: none;
-}
-
-.colored-button__link {
   color: white;
-  text-decoration: none;
 }
 
 .colored-button:hover, .transparent-button:hover {
@@ -152,6 +147,7 @@ body {
   font-size: 50px;
   line-height: 60px;
   width: 630px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -361,6 +357,8 @@ body {
 
 .integration__button {
   display: block;
+  width: max-content;
+  line-height: 60px;
   margin-top: 32px;
   margin: 0 auto;
 }
@@ -391,7 +389,9 @@ body {
 
 .offer__button {
   display: block;
+  width: max-content;
   margin: 0 auto;
+  line-height: 60px;
   padding: 0 40px 0 40px;
   background-color: black;
   border: black;

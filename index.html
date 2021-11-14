@@ -10,40 +10,34 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__logo">
-                        <a href="#" class="navigation__logo-link">
-                            <img src="images/main-logo.png" alt="main logo" class="main-logo"><!--
-                     --></a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__item-link">Product</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__item-link">Features</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__item-link">Pricing</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__item-link">Case studies</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__item-link">Resources</a>
-                    </li>    
-                        <ul class="navigation__list_right">
-                            <li class="navigation__item-button">
-                                <button class="transparent-button"> 
-                                    <a href="#" class="transparent-button__link">Log in</a>
-                                </button>
-                                <button class="colored-button">
-                                    <a href="#" class="colored-button__link">Try it free</a>
-                                </button>
-                            </li>
-                        </ul>
-                </ul>
-            </nav>
+            <div class="header__wrap">
+                <a href="#" class="header__logo-link">
+                    <img src="images/main-logo.png" alt="main logo" class="main-logo"><!--
+             --></a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__item-link">Product</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__item-link">Features</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__item-link">Pricing</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__item-link">Case studies</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__item-link">Resources</a>
+                        </li> 
+                    </ul>   
+                </nav>
+                <div class="header__buttons">
+                    <a href="#" class="transparent-button">Log in</a>
+                    <a href="#" class="colored-button">Try it free</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -55,12 +49,11 @@
                     for agile teams. Embrace automation, workflow transparency, and fast project 
                     delivery.
                 </p><!--
-             --><button class="colored-button intro-colored">
-                    <a href="#" class="colored-button__link">Try it free</a>
-                </button>
-                <button class="transparent-button intro-trnsparent"> 
-                    <a href="#" class="transparent-button__link">Book a demo</a>
-                </button> 
+             -->
+                <div class="buttons">
+                    <a href="#" class="colored-button intro-colored">Try it free</a>
+                    <a href="#" class="transparent-button intro-trnsparent">Book a demo</a>
+                </div>
                 <span class="intro__text">Try all features for 14 days · No credit card required</span>
             </div>
         </div>
@@ -105,68 +98,62 @@
     </section>
     <section class="advantages">
         <div class="container">
-            <ul class="advantages__wrap img-right">
-                <li class="advantages__text">
-                    <h1 class="advantages__title">Control the localization process</h1>
-                    <p class="advantages__description">Collaborate with your team in a single workspace. 
-                        Add and assign tasks, track progress, and enjoy a seamless localization workflow 
-                        where you know who is doing what and when.
-                    </p>
-                    <span>
-                        <a href="#" class="advantages__link">Start now</a>
-                    </span>
+            <ul class="advantages__cards">
+                <li class="advantages__wrap img-right">
+                    <div class="advantages__text">
+                        <h1 class="advantages__title">Control the localization process</h1>
+                        <p class="advantages__description">Collaborate with your team in a single workspace. 
+                            Add and assign tasks, track progress, and enjoy a seamless localization workflow 
+                            where you know who is doing what and when.
+                        </p>
+                        <span>
+                            <a href="#" class="advantages__link">Start now</a>
+                        </span>
+                    </div>  
+                    <img src="./images/control_img.png" alt="image" class="advantages__image">
                 </li>
-                <li class="advantages__image">    
-                    <img src="./images/control_img.png" alt="image">
-                </li>  
-            </ul>
-            <ul class="advantages__wrap img-left">
-                <li class="advantages__text">
-                    <h1 class="advantages__title">Shorten time to market</h1>
-                    <p class="advantages__description">Localize your product 
-                        in parallel with the development cycle. Use the Adobe XD, 
-                        Figma, and Sketch plugins to start working on translations 
-                        as soon as the product design is ready. No more idle waiting.
-                    </p>
-                    <span>
-                        <a href="#" class="advantages__link">Start now</a>
-                    </span>
+                <li class="advantages__wrap img-left">
+                    <div class="advantages__text">
+                        <h1 class="advantages__title">Shorten time to market</h1>
+                        <p class="advantages__description">Localize your product 
+                            in parallel with the development cycle. Use the Adobe XD, 
+                            Figma, and Sketch plugins to start working on translations 
+                            as soon as the product design is ready. No more idle waiting.
+                        </p>
+                        <span>
+                            <a href="#" class="advantages__link">Start now</a>
+                        </span>
+                    </div>  
+                    <img src="./images/time_img.png" alt="image" class="advantages__image">
                 </li>
-                <li class="advantages__image">    
-                    <img src="./images/time_img.png" alt="image">
-                </li>  
-            </ul>
-            <ul class="advantages__wrap img-right">
-                <li class="advantages__text">
-                    <h1 class="advantages__title">Ensure quality</h1>
-                    <p class="advantages__description">Use built-in tools — e.g. 
-                        translation memory, machine translation, and QA checks — 
-                        to enhance the quality and cohesion of translations. 
-                        Add product screenshots for context and use the in-context editors for instant previews.
-                    </p>
-                    <span>
-                        <a href="#" class="advantages__link">Start now</a>
-                    </span>
+                <li class="advantages__wrap img-right">
+                    <div class="advantages__text">
+                        <h1 class="advantages__title">Ensure quality</h1>
+                        <p class="advantages__description">Use built-in tools — e.g. 
+                            translation memory, machine translation, and QA checks — 
+                            to enhance the quality and cohesion of translations. 
+                            Add product screenshots for context and use the in-context editors for instant previews.
+                        </p>
+                        <span>
+                            <a href="#" class="advantages__link">Start now</a>
+                        </span>
+                    </div>  
+                    <img src="./images/quality_img.png" alt="image" class="advantages__image">
                 </li>
-                <li class="advantages__image">    
-                    <img src="./images/quality_img.png" alt="image">
-                </li>  
-            </ul>
-            <ul class="advantages__wrap img-left">
-                <li class="advantages__text">
-                    <h1 class="advantages__title">Less work for developers</h1>
-                    <p class="advantages__description">Eliminate the hassle of localization 
-                        and let developers get back to their main tasks. Save hours with 
-                        the powerful API, CLI, mobile SDKs, and integrations with  GitHub, 
-                        Bitbucket, JIRA, and more.
-                    </p>
-                    <span>
-                        <a href="#" class="advantages__link">Start now</a>
-                    </span>
+                <li class="advantages__wrap img-left">
+                    <div class="advantages__text">
+                        <h1 class="advantages__title">Less work for developers</h1>
+                        <p class="advantages__description">Eliminate the hassle of localization 
+                            and let developers get back to their main tasks. Save hours with 
+                            the powerful API, CLI, mobile SDKs, and integrations with  GitHub, 
+                            Bitbucket, JIRA, and more.
+                        </p>
+                        <span>
+                            <a href="#" class="advantages__link">Start now</a>
+                        </span>
+                    </div>  
+                    <img src="./images/work_img.png" alt="image" class="advantages__image">
                 </li>
-                <li class="advantages__image">    
-                    <img src="./images/work_img.png" alt="image">
-                </li>  
             </ul>
         </div>
     </section>
@@ -270,18 +257,18 @@
             <h1 class="integration__title">Integrate Lokalise with your work tools</h1>
             <p class="integration__text">Automate processes, eliminate routine tasks, and track progress with ease.</p>
             <img src="./images/integration_img.png" alt="image" class="integration__image">
-            <button class="colored-button integration__button">
-                <a href="#" class="colored-button__link">See all integrations</a>
-            </button>
+            <div class="buttons">
+                <a href="#" class="colored-button integration__button">See all integrations</a>
+            </div>
         </div>
     </section>
     <section class="offer">
         <div class="container">
             <h1 class="offer__title">Localization made easy. Why wait?</h1>
             <p class="offer__text">Try for free or let us show you how it works.</p>
-            <button class="colored-button offer__button">
-                <a href="#" class="colored-button__link">Try it free</a>
-            </button>
+            <div class="buttons">
+                <a href="#" class="colored-button offer__button">Try it free</a>
+            </div>
         </div>
     </section>
     <section class="site-map">
@@ -295,45 +282,117 @@
                     <a href="" class="site-map__card-link">Read more</a>
                 </li>
                 <li class="site-map__item">
-                        <h6 class="site-map__item-title">Product</h6>
-                        <a href="" class="site-map__item-link">For developers</a>
-                        <a href="" class="site-map__item-link">For managers</a>
-                        <a href="" class="site-map__item-link">For translators</a>
-                        <a href="" class="site-map__item-link">For designers</a>
-                        <a href="" class="site-map__item-link">Integrations</a>
-                        <a href="" class="site-map__item-link">Security</a>
-                        <a href="" class="site-map__item-link">Pricing</a>
-                        <a href="" class="site-map__item-link">Automations</a>
+                    <ul class="site-map__item-list">
+                        <li class="site-map__item-line">
+                            <h6 class="site-map__item-title">Product</h6>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">For developers</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">For managers</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">For translators</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">For designers</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Integrations</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Security</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Pricing</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Automations</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="site-map__item">
-                    <h6 class="site-map__item-title">Support</h6>
-                    <a href="" class="site-map__item-link">Contact</a>
-                    <a href="" class="site-map__item-link">Documentation</a>
-                    <a href="" class="site-map__item-link">Status</a>
-                    <a href="" class="site-map__item-link">Product Updates</a>
-                    <a href="" class="site-map__item-link">CLI Tool</a>
-                    <a href="" class="site-map__item-link">API Reference</a>
-                    <a href="" class="site-map__item-link">iOS and Android SDK</a>
-                    <a href="" class="site-map__item-link">Supported File Formats</a>
+                    <ul class="site-map__item-list">
+                        <li class="site-map__item-line">
+                            <h6 class="site-map__item-title">Support</h6>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Contact</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Documentation</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Status</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Product Updates</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">CLI Tool</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">API Reference</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">iOS and Android SDK</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Supported File Formats</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="site-map__item">
-                    <h6 class="site-map__item-title">Company</h6>
-                    <a href="" class="site-map__item-link">About</a>
-                    <a href="" class="site-map__item-link">Blog</a>
-                    <a href="" class="site-map__item-link">Careers | We`re Hiring</a>
-                    <a href="" class="site-map__item-link">Case Studies</a>
-                    <a href="" class="site-map__item-link">Media Kit</a>
+                    <ul class="site-map__item-list">
+                        <li class="site-map__item-line">
+                            <h6 class="site-map__item-title">Company</h6>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">About</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Blog</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Careers | We`re Hiring</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Case Studies</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Media Kit</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="site-map__item">
-                    <h6 class="site-map__item-title">Legal</h6>
-                    <a href="" class="site-map__item-link">Terms of Service</a>
-                    <a href="" class="site-map__item-link">Privacy Policy</a>
-                    <a href="" class="site-map__item-link">Cookie Policy</a>
-                    <a href="" class="site-map__item-link">Privacy Shield</a>
-                    <a href="" class="site-map__item-link">DPA</a>
-                    <a href="" class="site-map__item-link">List of Sub-processors</a>
-                    <a href="" class="site-map__item-link">Candidates Privacy Notice</a>
-                </li>                
+                    <ul class="site-map__item-list">
+                        <li class="site-map__item-line">
+                            <h6 class="site-map__item-title">Legal</h6>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Terms of Service</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Privacy Policy</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Cookie Policy</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Privacy Shield</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">DPA</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">List of Sub-processors</a>
+                        </li>
+                        <li class="site-map__item-line">
+                            <a href="" class="site-map__item-link">Candidates Privacy Notice</a>
+                        </li>
+                    </ul>
+                </li>              
             </ul>
         </div>
     </section>
