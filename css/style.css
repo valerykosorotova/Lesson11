@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Graphik LCG";
-  src: url("./fonts/subset-GraphikLCG-Regular.eot");
-  src: url("./fonts/subset-GraphikLCG-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/subset-GraphikLCG-Regular.woff2") format("woff2"), url("./fonts/subset-GraphikLCG-Regular.woff") format("woff"), url("./fonts/subset-GraphikLCG-Regular.ttf") format("truetype"), url("./fonts/subset-GraphikLCG-Regular.svg#GraphikLCG-Regular") format("svg");
+  src: url("../fonts/subset-GraphikLCG-Regular.eot");
+  src: url("../fonts/subset-GraphikLCG-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-GraphikLCG-Regular.woff2") format("woff2"), url("../fonts/subset-GraphikLCG-Regular.woff") format("woff"), url("../fonts/subset-GraphikLCG-Regular.ttf") format("truetype"), url("../fonts/subset-GraphikLCG-Regular.svg#GraphikLCG-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Graphik LCG";
-  src: url("./fonts/subset-GraphikLCG-Semibold.eot");
-  src: url("./fonts/subset-GraphikLCG-Semibold.eot?#iefix") format("embedded-opentype"), url("./fonts/subset-GraphikLCG-Semibold.woff2") format("woff2"), url("./fonts/subset-GraphikLCG-Semibold.woff") format("woff"), url("./fonts/subset-GraphikLCG-Semibold.ttf") format("truetype"), url("./fonts/subset-GraphikLCG-Semibold.svg#GraphikLCG-Semibold") format("svg");
+  src: url("../fonts/subset-GraphikLCG-Semibold.eot");
+  src: url("../fonts/subset-GraphikLCG-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-GraphikLCG-Semibold.woff2") format("woff2"), url("../fonts/subset-GraphikLCG-Semibold.woff") format("woff"), url("../fonts/subset-GraphikLCG-Semibold.ttf") format("truetype"), url("../fonts/subset-GraphikLCG-Semibold.svg#GraphikLCG-Semibold") format("svg");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -405,13 +405,21 @@ body {
 .site-map__wrap {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.site-map__item-wrap {
+  flex-grow: 2;
+  margin-left: 140px;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .site-map__card {
   width: 300px;
-  margin-right: 50px;
 }
 .site-map__card-title {
   font-weight: 600;
