@@ -93,6 +93,10 @@ body {
   padding: 129px 0 182px 0;
 }
 
+.intro__wrap {
+  display: flex;
+}
+
 .intro__title {
   width: 550px;
   font-weight: 600;
@@ -125,16 +129,8 @@ body {
 .intro__text {
   display: block;
   padding-top: 25px;
-  width: 370px;
   font-size: 15px;
   line-height: 25px;
-}
-
-.intro__wrap {
-  background-image: url("../images/accelerate_background.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
 }
 
 .companies {
@@ -158,6 +154,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .advantages__title {
